@@ -1,0 +1,27 @@
+main:
+  - name: "Tuina-Therapie"
+    url: "/tuina/"
+    weight: 1
+  - name: "Seminare"
+    url: "/ausbildung/"
+    weight: 2
+  - name: "Team"
+    url: "/team/"
+    weight: 3
+  - name: "Absolventen"
+    url: "/absolventen/"
+    weight: 4
+  - name: "Kontakt"
+    url: "/kontakt/"
+    weight: 5
+
+footer:
+  - name: "Impressum"
+    url: "/impressum/"
+    weight: 1
+  - name: "Kontakt"
+    url: "/kontakt/"
+    weight: 2
+  - name: "Mitgliedschaft"
+    url: "/mitgliedschaft/"
+    weight: 3

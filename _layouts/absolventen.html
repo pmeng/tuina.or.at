@@ -1,0 +1,52 @@
+---
+layout: default
+bodyClass: "page-teams"
+---
+
+<div class="intro">
+  <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+      <div class="row justify-content-start">
+        <div class="col-12 col-md-8">
+              {{ content }}
+          </div>
+          {% if page.intro_image %}
+          <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+              <img alt={{ page.title }} class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
+          </div>
+          {% endif %}
+      </div>
+  </div>
+</div>
+
+<div class="container pt-6 pb-6">
+  <div class="row">
+      {% assign absolventen = site.absolventen | sort: "weight" %}
+      {% for absolvent in absolventen %}
+      <div class="col-12 col-md-6 mb-2">
+          <div class="team team-summary team-summary-large">
+              {% if absolvent.image %}
+              <div class="team-image">
+                  <img width="90" height="90" alt="{{ absolvent.title }}" class="img-fluid mb-2" src="{{ absolvent.image | relative_url }}" />
+              </div>
+              {% endif %}
+              <div class="team-meta">
+                  <h2 class="team-name">{{ absolvent.title }}</h2>
+                  <p class="team-description">{{ absolvent.jobtitle }}</p>
+                  <p class="team-description">{{ absolvent.adresszeile1 }}</p>
+                  <p class="team-description">{{ absolvent.adresszeile2 }}</p>
+                  {% if absolvent.email %}
+                  <p class="team-description"><b>E-Mail: </b><a target="_blank" href="mailto:{{ absolvent.email }}">{{ absolvent.email }}</a></p>
+                  {% endif %}
+                  {% if absolvent.telefon %}
+                  <p class="team-description"><b>Telefon: </b><a href="tel:{{ absolvent.telefon_techn }}">{{ absolvent.telefon }}</a></p>
+                  {% endif %}
+                  {% if absolvent.webseite %}
+                  <p class="team-description"><b>Webseite: </b><a target"="_blank" href="{{ absolvent.webseite }}">{{ absolvent.webseite }}</a></p>
+                  {% endif %}
+              </div>
+              <div class="team-content">{{ absolvent.content }}</div>
+          </div>
+      </div>
+      {% endfor %}
+  </div>
+</div>
