@@ -1,5 +1,5 @@
 destination: docs/
-baseurl: 'https://pmeng.github.io/tuina.or.at/'
+#baseurl: '127.0.0.1:4000'
 permalink: pretty
 title: 'ÖGT - Österreichische Gesellschaft für Tuina'
 

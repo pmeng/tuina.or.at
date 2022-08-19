@@ -11,9 +11,7 @@ Linzerstrasse 59
 
 Telefon <a href="tel:+436641219103">+43 664 12 19 103</a>
 
-Fax +43 732 7807 662 210
-
-E-Mail <a href="mailto:martin.luch@ooegkk.at">martin.luch@ooegkk.at</a>
+E-Mail <a href="mailto:martin.luch@oegk.at">martin.luch@oegk.at</a>
 
 #### Bankverbindung
 

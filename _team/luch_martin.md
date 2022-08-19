@@ -3,7 +3,7 @@ title: "Dr. Martin Luch"
 draft: false
 image: "images/team/luch_martin.gif"
 jobtitle: "Vortragender, Leiter"
-email: "martin.luch@ooegkk.at"
+email: "martin.luch@oegk.at"
 promoted: true
 weight: 2
 ---
