@@ -1,7 +1,7 @@
 destination: docs/
 #baseurl: '127.0.0.1:4000'
 permalink: pretty
-title: 'ÖGT - Österreichische Gesellschaft für Tuina'
+title: "ÖGT - Österreichische Gesellschaft für Tuina"
 
 logo:
   mobile: "images/logo/logo.gif"
@@ -10,6 +10,9 @@ logo:
   desktop: "images/logo/logo.gif"
   desktop_height: "68px"
   desktop_width: "75px"
+  letters_img: "images/chinese.gif"
+  letters_img_width: "627px"
+  letters_img_height: "68px"
 
 collections:
   absolventen:
